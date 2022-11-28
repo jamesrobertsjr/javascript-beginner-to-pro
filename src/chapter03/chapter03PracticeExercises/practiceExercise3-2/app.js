@@ -1,0 +1,12 @@
+const shoppingList = [];
+shoppingList.push("Milk", "Bread", "Apples");
+shoppingList.splice(1, 1, "Bananas", "Eggs");
+shoppingList.pop();
+console.log(shoppingList);
+shoppingList.sort();
+console.log(shoppingList.indexOf("Milk"));
+shoppingList.splice(1, 0, "Carrots", "Lettuce");
+const shoppingList2 = ["Juice", "Pop"];
+shoppingList.push(shoppingList2, shoppingList2);
+console.log(shoppingList.indexOf("Pop"));
+alert(`Your shopping list contains:\n${shoppingList}`);
